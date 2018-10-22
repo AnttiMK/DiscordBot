@@ -8,7 +8,11 @@ client.on("ready", () => {
 client.on("message", (message) => {
     if (message.content.startsWith("ping")) {
         message.channel.send("pong!");
-    }
+    } else
+
+        if (message.content.startsWith("foo")) {
+            message.channel.send("bar!");
+        }
 });
 
 client.login("Mzc5MDM3OTk5OTU1OTY4MDI5.Dq_Hlg.n4AW-F5JzOO5Kx9DgqZnA-su0ss");
