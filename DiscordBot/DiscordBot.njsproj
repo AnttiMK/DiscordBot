@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fc32a6ee-33aa-4159-ab2c-4f6dc5b69ed0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>bot.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -28,8 +28,16 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="bot.js" />
+    <Compile Include="app.js" />
+    <Compile Include="commands\kick.js" />
+    <Compile Include="commands\ping.js" />
+    <Compile Include="events\message.js" />
+    <Content Include="config.json" />
     <Content Include="package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="events\" />
+    <Folder Include="commands\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
