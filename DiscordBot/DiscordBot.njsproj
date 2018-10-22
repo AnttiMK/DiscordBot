@@ -31,8 +31,11 @@
     <Compile Include="app.js" />
     <Compile Include="commands\kick.js" />
     <Compile Include="commands\ping.js" />
+    <Compile Include="commands\reload.js" />
     <Compile Include="events\message.js" />
+    <Compile Include="events\ready.js" />
     <Content Include="config.json" />
+    <Content Include="events\guildMemberAdd.js" />
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
