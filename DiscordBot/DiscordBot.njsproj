@@ -34,8 +34,10 @@
     <Compile Include="commands\reload.js" />
     <Compile Include="events\message.js" />
     <Compile Include="events\ready.js" />
-    <Content Include="config.json" />
     <Content Include="events\guildMemberAdd.js" />
+    <Content Include="config.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
