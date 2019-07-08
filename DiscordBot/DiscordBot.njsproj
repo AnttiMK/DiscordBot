@@ -38,6 +38,7 @@
     <Content Include="config.json">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="package-lock.json" />
     <Content Include="package.json" />
   </ItemGroup>
   <ItemGroup>
